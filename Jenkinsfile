@@ -25,7 +25,7 @@ pipeline {
         DOCKERHUB_PASSWORD = '!babji2009@'
       }
       steps {
-        sh 'sudo docker push rshabbir53/nodeserver:1.0'
+        sh 'sudo docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD'
       }
     }
 
