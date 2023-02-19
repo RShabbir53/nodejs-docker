@@ -29,5 +29,11 @@ pipeline {
       }
     }
 
+    stage('push to docker hub') {
+      steps {
+        sh 'sudo docker push rshabbir53/nodeserver:1.0'
+      }
+    }
+
   }
 }
