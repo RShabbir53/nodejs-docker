@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout code') {
       steps {
-        git(url: 'https://github.com/RShabbir53/nodejs-docker', branch: 'main')
+        git(url: 'https://github.com/RShabbir53/nodejs-docker', branch: 'main', credentialsId: 'RShabbir53')
       }
     }
 
