@@ -21,7 +21,7 @@ pipeline {
 
     stage('log in to docker hub') {
       environment {
-        DOCKERHUB_CREDS = credentials('docker-shabbir')
+        DOCKERHUB_CREDS = credentials('jenkins-docker-shabbir-creds')
       }
       steps {
         sh 'sudo docker login -u $DOCKERHUB_CREDS_USR -p $DOCKERHUB_CREDS_PSW'
