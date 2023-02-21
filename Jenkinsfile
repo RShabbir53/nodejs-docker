@@ -15,7 +15,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'echo"sudo docker build -t rshabbir53/nodeserver:1.0 ."'
+        sh 'echo "sudo docker build -t rshabbir53/nodeserver:1.0 ."'
       }
     }
 
